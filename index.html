@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--  -->
+    <title>Manqala Ltd</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="Style.css">
+
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div id="change_back" onclick="changeBack();">Change Back</div>
+
+    <nav class="navbar" id="small-nav">
+        <div class="container-fluid">
+            <div class="top-nav-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                </svg>
+                <p> info@manqala.com</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-phone-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z" />
+                </svg>
+                <p>+234 (0) 908 169 1218</p>
+            </div>
+
+
+            <div class="top-nav-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>
+
+
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#myPage" style="padding-top:10px; margin-left: 15%;"><img
+                    src="images/logo.png" width="150" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#myPage">HOME</a></li>
+                    <li><a href="#portfolio">PRODUCTS</a></li>
+                    <li><a id="contact" href="#contact-section">CONTACT US</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel section-->
+    <div class="Carousel-section row">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Man power.jpg" class="d-block w-100 h-50" alt="...">
+                    <div class="banner-text">
+                        <h2>SKILLED MANPOWER SOLUTIONS</h2>
+                        <p>Provision of skilled manpower in all Oil & Gas technical areas as well as Back Office and
+                            Support Service staff</p>
+                    </div>
+
+                    <div class="black-overlay"></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Business Service.jpg" class="d-block w-100 h-50" alt="...">
+                    <div class="banner-text">
+                        <h2>BUSINESS PROCESS SERVICES</h2>
+                        <p>Provision of Outsourced HR, Payroll and Information Technology services to reduce overhead at
+                            back-office support</p>
+                    </div>
+                    <div class="black-overlay"></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/IT Solutions.jpg" class="d-block w-100 h-50" alt="...">
+                    <div class="banner-text">
+                        <h2>EXPERT TECHNOLOGY SOLUTIONS</h2>
+                        <p>Technology Support and Implementation Services using technology from SAP, Microsoft, Oracle,
+                            ERPNext and Mifos</p>
+                    </div>
+                    <div class="black-overlay"></div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+    <!--Products and Services section-->
+
+    <div id="portfolio" class="container-fluid text-center products-section">
+        <h2>Products and Services</h2>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">Products</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">Services</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <table class="table">
+
+                    <tbody>
+                        <tr>
+
+
+                            <td><img src="images/sap.png" width="150" />
+                            <p> SAP is the market-leading Enterprise Resource Planning Software used by the world's leading businesses.
+                                 Business Processes catered to by SAP ERP include Operations, Financials  and Human Capital Management </p>
+                            </td>
+                            <td><img src="images/erpnext.png" width="150" />
+                                <p>ERPNext is ERP made simple. It helps you take full control of your business. 
+                                It is as powerful as it is easy to use. The market-leading open source ERP for SMEs
+                            </p>
+                            </td>
+                        </tr>
+                        <tr>
+
+
+                            <td><img src="images/Estate Manager.jpg" width="150" />
+                            <p>Estate Manager is an Estate Management solutions that is built on ERPNEXT.
+                                 It helps Estate owners automate all processes involved in running their estates. </p>
+                            </td>
+
+                            <td> <img src="images/mifosx.jpeg" width="150" />
+
+                                <p>Mifos X is a modern platform with a modular architecture 
+                                    providing the core functionality needed for financial inclusion.
+                                    It can be used by SACCOs, Co-Operatives, Banks, Credit Unions, Digital Platforms.</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                <table class="table">
+
+                    <tbody>
+                        <tr>
+
+
+                            <td>
+                                <h5>SKILLED MANPOWER SOLUTIONS</h5>
+                                <p>Provision of skilled manpower in all Oil & Gas technical areas as well as Back Office and Support Service staff</p>
+
+                            </td>
+                            <td>
+                                <h5>BUSINESS PROCESS SERVICES</h5>
+                            <p> Provision of Outsourced HR, Payroll and Information Technology services to reduce overhead at back-office support</p>
+                            </td>
+                        </tr>
+                        <tr>
+
+
+                            <td><h5>EXPERT TECHNOLOGY SOLUTION</h5>
+                            <p>Technology Support and Implementation Services using technology from SAP, Microsoft, Oracle, ERPNext and Mifos</p>
+                            </td>
+                            <td><h5>ESTATE MANAGEMENT</h5>
+                            <p>Digitized Estate management with the use of Estate Manager; a software solution created by Manqala to automate various estate management processes.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="contact-section" class="container-fluid">
+        <div class="row">
+            <div class="col" id="left">
+           <h2>Contact us and we'll get back to you within 24 hours</h2>
+           <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
+            fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg> Manqala Ltd. 1st Floor, Dulux Building, KM 18 Lekki-Ajah Expressway, Lagos. Nigeria</p>
+
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+                <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+              </svg>  
+            
+            +234 (0) 908 169 1218
+        </p>
+
+        <p> 
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+              </svg>
+            Info@manqala.com
+        </p>
+            </div>
+            <div class="col" id="right">
+                <form class="row g-3">
+                    <div class="col-md-12">
+                      <label  class="form-label">Full Name</label>
+                      <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-6">
+                        <label  class="form-label">Company</label>
+                        <input type="text" class="form-control" >
+                      </div>
+                    <div class="col-6">
+                      <label class="form-label">Email Address</label>
+                      <input type="email" class="form-control"  >
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label">Phone</label>
+                        <input type="text" class="form-control"  >
+                      </div>
+                      <div class="col-6">
+                        <label for="inputAddress" class="form-label">Country</label>
+                        <input type="text" class="form-control" >
+                      </div>
+                      <div class="col-12">
+                        <label  class="form-label">Enquiry/Project Description</label>
+                        <input type="text" class="form-control" id="enquiry" >
+                      </div>
+                   
+                    
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </form>
+            </div>
+          </div>
+
+    </div>
+
+    <nav class="navbar" id="small-nav">
+        <div class="container-fluid">
+            <div class="top-nav-left">
+             
+                <p> &#169; Manqala 2021</p>
+            </div>
+
+
+            <div class="top-nav-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>
+
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
