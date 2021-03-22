@@ -309,11 +309,12 @@ td h5{
  /* Media Queries*/
 
  @media screen and (max-width: 767px){
-  
-    #contact{
-        display: none;
-    }
 
+    
+    #contact{
+        background-color:none;
+        border: none;
+    }
 
     .carousel-item .banner-text{
     
@@ -342,13 +343,72 @@ td h5{
  }
 
  @media screen and (max-width: 480px){
-    #small-nav{
-        display: none;
-
-    }
 
     #contact{
-        display: none;
+        background-color:none;
+        border: none;
     }
+
+    
+.top-nav-left{
+    margin-left: 0;
+   
+}
+
+.top-nav-left p{
+    color: #Fd9d12;
+    display: inline;
+    margin-left: 1px;
+    font-size: 7px;
+}
+
+.top-nav-right{
+    display: none;
+}
+
+.navbar-brand img {
+    margin-left: 2% !important;
+    width: 80px !important;
+}
+
+
+.products-section h2{
+    font-size: 25px;
+    margin-left: 5%;
+    margin-top: 5%;
+ 
+}
+
+.nav-tabs .nav-link{
+   font-size: 20px; 
+}
+
+.tab-content{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.products-section .nav {
+    padding-left: 18%;
+
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom:none !important;
+}
+
+.table img{
+    width: 80px;
+}
+
+.btn-primary{
+    color: #fff;
+    background: #Fd9d12;
+   width: 200px;
+   text-align: center;
+   border: none;
+   align-content: center;
+   margin-left: 20%;
+}
   
 }
