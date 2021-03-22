@@ -223,9 +223,7 @@ td{
     padding: 30px 30px  !important;
     border-radius: 50px  !important;
     background-color: rgb(231, 228, 228)  !important;
-
-   
-    
+ 
 }
 
 td p{
@@ -348,8 +346,7 @@ td h5{
         background-color:none;
         border: none;
     }
-
-    
+ 
 .top-nav-left{
     margin-left: 0;
    
@@ -412,3 +409,60 @@ td h5{
 }
   
 }
+
+@media screen and (max-width: 375px){
+
+    .carousel-item h2{
+        font-size: 30px; 
+        width: 60%;
+        margin-left: 12%;
+
+    }
+
+    
+    .carousel-item{
+        height: 500px;
+    }
+    
+    .carousel-item img{
+        min-height: 500px;
+     }
+
+    .carousel-item .banner-text{
+        
+        margin-top: 35%;
+       
+    }
+ 
+    .top-nav-left{
+        margin-left: 0;
+       
+    }
+    
+    .top-nav-left p{
+        color: #Fd9d12;
+        display: inline;
+        margin-left: 1px;
+        font-size: 6px;
+    }
+
+    .nav-tabs .nav-link .nav-item{
+       margin-right: 400px;
+      
+        
+    }
+
+    
+td{
+    padding: 15px 15px  !important;
+}
+
+td p{
+    font-size: 12px;
+  }
+
+
+ 
+
+}
+
