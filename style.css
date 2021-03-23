@@ -485,6 +485,35 @@ td p{
     font-size: 12px;
   }
 
+  
+.footer-left{
+    margin-left: 15%;
+   
+}
+
+.footer-left p{
+    color: #Fd9d12;
+    display: inline;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.footer-right{
+    display: none;
+}
+
+.footer-left .bi{
+    fill: #Fd9d12 ;
+    padding-bottom: 0.2em;
+}
+
+.footer-right .bi{
+    fill: #Fd9d12 ;
+    padding-bottom: 0.2em;
+    margin-right: 15px;
+}
+
+
 
  
 
