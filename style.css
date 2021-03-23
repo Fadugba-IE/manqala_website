@@ -343,8 +343,12 @@ td h5{
  @media screen and (max-width: 480px){
 
     #contact{
-        background-color:none;
+        background-color:transparent;
         border: none;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0.05rem;
     }
  
 .top-nav-left{
@@ -412,6 +416,22 @@ td h5{
 
 @media screen and (max-width: 375px){
 
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0.05rem;
+    }
+
+
+    #contact{
+        background-color:transparent;
+        border: none;
+    }
+
+    .navbar-brand img {
+        margin-left: 0 !important;
+        width: 50px !important;
+        height: 20px !important;
+    }
+
     .carousel-item h2{
         font-size: 30px; 
         width: 60%;
@@ -431,6 +451,7 @@ td h5{
     .carousel-item .banner-text{
         
         margin-top: 35%;
+        margin-left: 15%;
        
     }
  
@@ -452,6 +473,9 @@ td h5{
         
     }
 
+    .products-section .nav {
+        padding-left: 12%;
+    }
     
 td{
     padding: 15px 15px  !important;
