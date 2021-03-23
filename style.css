@@ -177,35 +177,18 @@
     padding-bottom: 5%;
 }
 .products-section h2{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/background/night1.jpg);
     font-size: 35px;
     font-weight: 400;
     text-align: center;
-    padding-top: 5%;
-    color: #Fd9d12;
-}
-
-.products-section .nav{
-    padding-left: 25%;
     margin-top: 5%;
-    border-bottom: none ;
-}
-
-
-.nav-tabs .nav-link{
-    color:#01071d;
-   margin-right: 300px;
-   font-size: 30px;
-   font-weight: 300;
-   width: 250px;
-    
-}
-
-.nav-tabs .nav-link.active{
-    border-bottom:#Fd9d12 solid 3px !important;
-    background: none ;
+    padding-top: 2%;
+    padding-bottom: 2%;
     color: #Fd9d12;
-    border: none;
+    margin-bottom: 5%;
 }
+
+
 
 .tab-content{
     margin-left: 10%;
@@ -214,7 +197,6 @@
 
 .table{
     border-collapse: separate;
-  
     border-spacing: 3px;
 }
 
@@ -380,22 +362,9 @@ td h5{
  
 }
 
-.nav-tabs .nav-link{
-   font-size: 20px; 
-}
-
-.tab-content{
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.products-section .nav {
-    padding-left: 18%;
-
-}
-
-.nav-tabs .nav-link.active {
-    border-bottom:none !important;
+td h5{
+    color: #Fd9d12;
+    font-size: 15px;
 }
 
 .table img{
@@ -433,24 +402,27 @@ td h5{
     }
 
     .carousel-item h2{
-        font-size: 30px; 
+        font-size: 20px; 
         width: 60%;
         margin-left: 12%;
 
     }
 
+    .carousel-item p{
+        font-size: 15px;
+    }
     
     .carousel-item{
-        height: 500px;
+        height: 300px;
     }
     
     .carousel-item img{
-        min-height: 500px;
+        min-height: 300px;
      }
 
     .carousel-item .banner-text{
         
-        margin-top: 35%;
+        margin-top: 15%;
         margin-left: 15%;
        
     }
@@ -467,23 +439,22 @@ td h5{
         font-size: 6px;
     }
 
-    .nav-tabs .nav-link .nav-item{
-       margin-right: 400px;
-      
-        
-    }
-
-    .products-section .nav {
-        padding-left: 12%;
-    }
     
 td{
     padding: 15px 15px  !important;
+    display: inline-block !important;
+    margin-bottom: 3%;
+    border-radius: 30px  !important;
 }
 
 td p{
     font-size: 12px;
   }
+
+  td h5{
+    color: #Fd9d12;
+    font-size: 15px;
+}
 
   
 .footer-left{
